@@ -1,0 +1,19 @@
+h1 User
+
+ul
+  each user in users
+    li
+      span= user.name
+      span= ' - '
+      a(href="/users/" + user.id + "/update") Edit
+      span= ' - '
+      a(href="/users/" + user.id + "/delete") Delete
+      
+h3 Add user
+form(method="POST")
+  lable name:
+  br
+  input(type="text", name="name")
+  button Add
+      
+      

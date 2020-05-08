@@ -1,0 +1,6 @@
+a(href="/transactions/create") Thuê sách
+p Lịch sử thuê sách
+ul
+  each tran in trans
+    li
+      p #{transaction.userName} đã mượn quyển sách: #{transaction.bookTitle}
